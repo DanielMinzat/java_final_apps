@@ -14,6 +14,10 @@ import {ReviewsComponent} from "../reviews/reviews.component";
 import {ProductService} from "../services/product.service";
 import {ContactFormComponent} from "../contact-form/contact-form.component";
 import {SocialMediaButtonsComponent} from "../social-media-buttons/social-media-buttons.component";
+import {MatFormField} from "@angular/material/form-field";
+import {MatInput} from "@angular/material/input";
+
+
 
 
 @Component({
@@ -31,6 +35,10 @@ import {SocialMediaButtonsComponent} from "../social-media-buttons/social-media-
     ReviewsComponent,
     ContactFormComponent,
     SocialMediaButtonsComponent,
+    MatFormField,
+    MatInput,
+
+
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -66,4 +74,7 @@ export class HomeComponent implements OnInit{
       this.products = response.data;
     });
   }
+
+
+
 }

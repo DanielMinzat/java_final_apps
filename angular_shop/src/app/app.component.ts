@@ -4,8 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {AuthComponent} from "./auth/auth.component";
 
+
+
+
 @Component({
-  selector: 'app-root', //selector reprezinta modul de apelare al componentei(e un tag de HTML)
+  selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, DashboardComponent, AuthComponent],
   templateUrl: './app.component.html',

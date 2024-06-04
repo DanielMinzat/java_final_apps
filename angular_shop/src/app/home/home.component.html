@@ -5,7 +5,7 @@
       <img class="img-logo"
            [src]="appConfig.getAppLogo()"/>
     </div>
-<!--    aici era owner la button-->
+
     <mat-card class="card-menu-button">
       <mat-card-content>
         <p>{{ appConfig.getAppOwner() }}</p>
@@ -17,16 +17,15 @@
       </mat-card-content>
     </mat-card>
     <br>
-<!--    test-->
+
     <mat-card class="card-menu-button-logout red-card" (click)="onLogOut()">
       <mat-card-content>
         <p>Logout</p>
       </mat-card-content>
     </mat-card>
-
   </mat-drawer>
 
-<!--  toolbar-->
+  <!--  toolbar-->
   <div class="drawer-sidenav-content">
     <mat-toolbar color="accent">
       <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
@@ -36,7 +35,6 @@
       <span class="example-spacer"></span>
       <app-cart-button></app-cart-button>
     </mat-toolbar>
-
     <mat-card class="card-about-us">
       <mat-card-title class="title-about-us">Bun Venit la {{ appConfig.getAppName() }}</mat-card-title>
       <mat-card-content>

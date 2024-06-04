@@ -11,8 +11,10 @@
   display: flex;
   justify-content: space-between;
   gap: 32px;
-  padding:0 270px;
-  /*transition: padding-right 2s ease-in-out;*/
+  /*pentru margini*/
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .nav-button {

@@ -1,0 +1,55 @@
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer #drawer class="drawer-sidenav" mode="side">
+
+    <div class="div-logo">
+      <img class="img-logo"
+           [src]="appConfig.getAppLogo()"/>
+    </div>
+    <mat-card class="card-menu-button">
+      <mat-card-content>
+        <p>{{ appConfig.getAppOwner() }}</p>
+      </mat-card-content>
+    </mat-card>
+    <br>
+    <mat-card (click)="onHome()">
+      <!-- Pentru button cu icon "home" -->
+      <div class="button-container">
+        <button mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)="onHome()" class="center-button">
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+    </mat-card>
+    <br>
+    <mat-card class="card-menu-button-dashboard" (click)="onDashboard()">
+      <mat-card-content>
+        <p>Dashboard</p>
+      </mat-card-content>
+    </mat-card>
+    <br>
+    <mat-card class="card-menu-button-logout red-card" (click)="onLogOut()">
+      <mat-card-content>
+        <p>Logout</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-drawer>
+  <div class="drawer-sidenav-content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{appConfig.getAppName()}} - Customers Manager</span>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+
+    <div style="display: flex">
+      <app-add-edit-customer [customer]="customerData"></app-add-edit-customer>
+
+      <app-list-customers (changeCustomerData)="onChangeCustomer($event)"></app-list-customers>
+  </div>
+
+
+
+  </div>
+
+</mat-drawer-container>
+

@@ -1,0 +1,180 @@
+.drawer-container {
+  width: 100%;
+  height: 100%;
+}
+
+.drawer-sidenav-content {
+  height: 100%;
+}
+
+.drawer-sidenav {
+  padding: 20px;
+}
+
+.card-menu-button {
+  width: 350px;
+  margin-bottom: 16px;
+}
+
+.div-logo {
+  width: 100%;
+  display: flex;
+}
+.img-logo{
+  height: 200px;
+  margin: auto;
+}
+.img-banner{
+  width: 30%;
+  margin: 16px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-about-us {
+  margin: 16px;
+}
+
+.title-about-us {
+  margin: 16px;
+}
+
+.text-about-us {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text-margin-top {
+  margin-top: 16px;
+}
+
+.div-text {
+  display: flex;
+}
+
+.img-section {
+  width: 400px;
+  margin-left: 16px;
+  border-radius: 16px;
+  height: 450px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+h1 {
+  color: #333;
+}
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+
+
+strong {
+  color: #007bff;
+}
+
+
+.arrow {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #007bff;
+  margin-left: 5px;
+  animation: arrowBlink 1s infinite;
+}
+@keyframes arrowBlink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/*logout button*/
+.red-card {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.red-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Asigură-te că textul este centrat vertical */
+}
+
+.red-card p {
+  margin: 0;
+  font-size: 15px; /* Ajustează în funcție de necesități */
+  text-align: center;
+}
+
+.red-card:hover {
+  background-color: darkred;
+}
+
+/*app owner*/
+
+.card-menu-button-owner mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Asigură-te că textul este centrat vertical */
+}
+
+.card-menu-button-owner p {
+  margin: 0;
+  font-size: 15px; /* Ajustează în funcție de necesități */
+  text-align: center;
+  font-weight: bold; /* Textul bolduit */
+}
+
+.card-menu-button-dashboard mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-menu-button-dashboard p {
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card-menu-button-dashboard:hover {
+  animation: pulse 1s forwards;
+}
+
+.card-menu-button-logout:hover {
+  animation: pulse 1s forwards;
+}
+
+

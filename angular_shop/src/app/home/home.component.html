@@ -1,0 +1,160 @@
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer #drawer class="drawer-sidenav" mode="side">
+
+    <div class="div-logo">
+      <img class="img-logo"
+           [src]="appConfig.getAppLogo()"/>
+    </div>
+<!--    aici era owner la button-->
+    <mat-card class="card-menu-button">
+      <mat-card-content>
+        <p>{{ appConfig.getAppOwner() }}</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-menu-button-dashboard" *ngIf="isUserAdmin()" (click)="onDashboard()">
+      <mat-card-content>
+        <p>Dashboard</p>
+      </mat-card-content>
+    </mat-card>
+    <br>
+<!--    test-->
+    <mat-card class="card-menu-button-logout red-card" (click)="onLogOut()">
+      <mat-card-content>
+        <p>Logout</p>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-drawer>
+
+  <div class="drawer-sidenav-content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{ appConfig.getAppName() }}</span>
+      <span class="example-spacer"></span>
+      <app-cart-button></app-cart-button>
+    </mat-toolbar>
+
+<!--        <img class="img-banner"-->
+<!--             src="https://i.pinimg.com/originals/b1/3b/2f/b13b2f17232adde6a6182cd680bf46ea.jpg"/>-->
+<!--        <img class="img-banner"-->
+<!--             src="https://wallpapercave.com/wp/wp9442288.jpg"/>-->
+<!--        <img class="img-banner"-->
+<!--             src="https://e0.pxfuel.com/wallpapers/786/725/desktop-wallpaper-ecommerce-solutions-smart-online-shopping.jpg"/>-->
+
+    <mat-card class="card-about-us">
+      <mat-card-title class="title-about-us">Bun Venit la {{ appConfig.getAppName() }}</mat-card-title>
+      <mat-card-content>
+
+        <div class="div-text">
+          <p>
+            Într-o lume plină de agitație și stres cotidian, fiecare dintre noi merită o pauză, o evadare din rutina
+            zilnică
+            și o șansă de a se relaxa complet. La {{ appConfig.getAppName() }}, suntem aici pentru a vă ajuta să găsiți
+            acea oază de
+            liniște și relaxare, departe de grijile de zi cu zi.
+            <br><br>
+            <b>De ce să alegeți {{ appConfig.getAppName() }}?</b>
+            <br><br>
+            <b>Destinații de Vis:</b> Indiferent dacă visați la plajele însorite ale Caraibelor, la liniștea munților
+            sau la explorarea unor orașe vibrante, avem ceva pentru fiecare.
+            <br><br>
+            <b>Servicii Personalizate:</b> Înțelegem că fiecare călător este unic. De aceea, oferim pachete
+            personalizate care să vă satisfacă toate dorințele și nevoile.
+            <br><br>
+            <b>Relaxați-vă Fără Griji:</b> Ne ocupăm de toate detaliile călătoriei, astfel încât dumneavoastră să vă
+            puteți relaxa și bucura de fiecare moment.
+            <br><br>
+            <b>Parteneri de Încredere:</b> Colaborăm cu cei mai buni furnizori de servicii turistice pentru a vă asigura
+            o experiență de neuitat, fără stres.
+            <br><br>
+            <b>Călătoriți cu Noi</b>
+            <br><br>
+            Explorați ofertele noastre și descoperiți destinația perfectă pentru următoarea voastră aventură.
+            Vizitați site-ul nostru, contactați-ne telefonic sau veniți direct la sediul nostru pentru a discuta cu
+            unul dintre consultanții noștri.
+
+            Vă mulțumim că ne-ați ales ca partener de călătorie. Suntem nerăbdători să vă ajutăm să creați amintiri de
+            neuitat!
+
+
+          </p>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card-about-us">
+      <mat-card-title class="title-about-us">Servicii Impecabile</mat-card-title>
+      <mat-card-content>
+
+
+        <div class="div-text">
+          <img class="img-section" style="margin-left: 0px !important; margin-right: 16px"
+               src="https://cdn.knd.ro/media/521/2862/1711/20325910/1/shutterstock-2111506931.jpg">
+
+          <title>Servicii Impecabile</title>
+          <body>
+
+          <h1>Descoperă lumea cu noi!</h1>
+
+          <p>La <strong>{{ appConfig.getAppName() }}</strong>, ne dedicăm să oferim experiențe de călătorie de neuitat,
+            cu servicii impecabile care să transforme fiecare călătorie într-o aventură memorabilă.
+            Cu o echipă pasionată și expertă în domeniul turismului, suntem aici pentru a vă ajuta să vă transformați
+            visurile de călătorie în realitate.</p>
+
+          <p>De la plajele exotice ale insulelor tropicale la vârfurile înzăpezite ale munților, de la orașele vibrante
+            la locurile istorice încărcate de mister, oferim o gamă largă de destinații și pachete de vacanță adaptate
+            fiecărui gust și fiecărei dorințe.</p>
+
+          <p><strong>Ce ne diferențiază?</strong></p>
+
+          <ul>
+            <li><strong>Expertiză locală:</strong> Colaborăm cu ghizi și parteneri locali pentru a vă oferi o
+              perspectivă autentică și unică asupra destinațiilor pe care le vizitați.
+            </li>
+            <li><strong>Asistență personalizată:</strong> Echipa noastră de profesioniști vă va ghida în fiecare etapă a
+              călătoriei, de la planificare până la întoarcerea acasă, asigurându-se că fiecare detaliu este perfect
+              gestionat.
+            </li>
+            <li><strong>Flexibilitate și opțiuni personalizate:</strong> Fie că căutați o escapadă romantică, o aventură
+              plină de adrenalină sau o vacanță relaxantă în familie, avem pachete și servicii adaptate fiecărei
+              preferințe.
+            </li>
+            <li><strong>Siguranță și încredere:</strong> Punem întotdeauna siguranța clienților noștri pe primul loc,
+              asigurându-ne că toate călătoriile sunt planificate în conformitate cu cele mai înalte standarde de
+              siguranță și sănătate.
+            </li>
+          </ul>
+
+          <p>Cu <strong>{{ appConfig.getAppName() }}</strong>, fiecare călătorie devine o poveste de neuitat, iar
+            experiențele noastre impecabile vă vor face să reveniți mereu pentru mai mult.
+            <strong>Alegeți pachetul dorit de vacanță</strong> și pregătiți-vă să vă bucurați de aventura vieții
+            voastre!</p>
+
+          <p><strong>[Pachete de Vacanță Disponibile]</strong></p>
+          <span class="arrow"></span><span class="arrow"></span><span class="arrow"></span>
+
+
+          </body>
+
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+
+    <app-list-products [isAdmin]="false"></app-list-products>
+
+    <app-contact-form></app-contact-form>
+
+  </div>
+
+</mat-drawer-container>
+
+<app-reviews></app-reviews>
+
+<!--vreau butoane-->
+<app-social-media-buttons></app-social-media-buttons>
+

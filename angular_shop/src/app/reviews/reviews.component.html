@@ -1,0 +1,10 @@
+<div class="reviews-container">
+  <div class="review" *ngFor="let review of reviews; let i = index"
+       [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+    <p>{{ review.text }}</p>
+    <div class="rating">
+      <span *ngFor="let star of [1, 2, 3, 4, 5]" [ngClass]="{'filled': star <= review.rating}">★</span>
+    </div>
+    <h4>{{ review.author }}</h4>
+  </div>
+</div>

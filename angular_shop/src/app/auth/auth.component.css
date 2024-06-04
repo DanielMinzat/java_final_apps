@@ -1,0 +1,39 @@
+.div-logo {
+  display: flex;
+  margin-bottom: 32px;
+  margin-top: 10px;
+}
+
+.img-logo {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-container {
+  height: 100%;
+  display: flex;
+  background-size: cover ;
+  background-image: url(https://wallpapers.com/images/featured/travel-hd-axhrsecphqby11wk.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  image-rendering: pixelated;
+}
+
+.card-container {
+  width: 30vw;
+  margin: auto;
+  margin-top: 20vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.div-input-field {
+  display: grid;
+}
+
+.div-buttons-container {
+  display: grid;
+}
+
+

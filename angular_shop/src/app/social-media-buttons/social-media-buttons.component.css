@@ -1,0 +1,38 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+.btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.btn-primary {
+  background-color: #3b5998;
+}
+.btn-instagram {
+  background-color: #E1306C;
+}
+.btn-linkedin {
+  background-color: #0077B5;
+}
+
+.btn-github {
+  background-color: #28a745;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Acesta face ca containerul să ocupe înălțimea întregii ferestre */
+  flex-direction: row; /* Adaugă această linie dacă vrei ca butoanele să fie aranjate vertical */
+}

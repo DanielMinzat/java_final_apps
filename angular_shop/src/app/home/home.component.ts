@@ -35,12 +35,12 @@ import {SocialMediaButtonsComponent} from "../social-media-buttons/social-media-
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-// si am pus implements
+
 export class HomeComponent implements OnInit{
-// si asta
+
   products: any[] = [];
 
-  //am adaugat ultima linie
+
   constructor(public appConfig: ConfigurationsService, private router:Router , private customerService:CustomerService, private productService: ProductService){
 
   }

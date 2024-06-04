@@ -123,8 +123,7 @@ export class ListProductsComponent implements OnInit {
   products: any[] = []; // Schimbați acest tip la nevoie
   currentIndex: number = 0;
   transitioning: boolean = false;
-  isSlidingLeft = false;
-  isSlidingRight = false;
+
 
   constructor(
     private productService: ProductService,

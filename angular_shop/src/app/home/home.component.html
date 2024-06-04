@@ -26,8 +26,9 @@
 
   </mat-drawer>
 
+<!--  toolbar-->
   <div class="drawer-sidenav-content">
-    <mat-toolbar color="primary">
+    <mat-toolbar color="accent">
       <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
@@ -141,13 +142,16 @@
     <app-list-products [isAdmin]="false"></app-list-products>
 
     <app-contact-form></app-contact-form>
+    <br><br>
+    <br><br>
+    <app-reviews></app-reviews>
 
+    <br>
+    <br>
+    <br>
+    <app-social-media-buttons></app-social-media-buttons>
   </div>
 
 </mat-drawer-container>
 
-<app-reviews></app-reviews>
-
-
-<app-social-media-buttons></app-social-media-buttons>
 

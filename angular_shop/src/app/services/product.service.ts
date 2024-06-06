@@ -9,7 +9,6 @@ import {ConfigurationsService} from "./configurations.service";
 export class ProductService {
   private productObservable = new BehaviorSubject<Array<any>>([]);
 
-  // am adaugat http: HttpClient
   constructor(private appConfig: ConfigurationsService, private httpClient: HttpClient, private  http: HttpClient) {
     this.readProducts();
   }
